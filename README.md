@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# CES-26: Serie de Exercicios 6 - React
+Projeto para implementacao de uma calculadora em React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Tecnologias
+Projeto desenvolvido com [React](https://pt-br.reactjs.org/), com a dependencias Redux.
 
-## Available Scripts
+### Execucao
+Para executar no computador, deve ser rodado o script:
 
-In the project directory, you can run:
+```bash
+$ sudo npm start start
+```
 
-### `yarn start`
+### Estrutura de arquivos principais
+```js
+- public
+  |- index.css
+  |- index.html
+- src
+  |- App.js
+  |- Calculator.js
+  |- index.css
+  |- index.js
+  |- reducer.js
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Pasta public
+Define a estrutura geral da página visualizada, com o HTML e CSS correspondente.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Arquivo src/App.js
+Define os elementos de props a serem passados para a classe Calculator, linkando ao Redux.
 
-### `yarn test`
+### Arquivo src/Calculator.js
+Implementa os botoes da calculadora, indicados pela classe Calculator. Essa classe e exportada e usada em index.js.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Arquivo src/index.css
+Define a estrutura CSS, com os estilos a serem aplicados nos componentes da pagina.
 
-### `yarn build`
+### Arquivo reducer.js
+Determina as funcoes do reducer, que sao chamadas nos respectivos botoes da calculadora.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Arquivo index.js
+Estabelece a renderização do componente criado em App para a pagina visualizada.
